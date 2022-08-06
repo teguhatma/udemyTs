@@ -18,7 +18,6 @@ class Sorter {
         // Only going to work if collection is a string
         // if collection is a string, do this logic instead
         if (typeof this.collection === 'string') {
-          this.collection;
         }
       }
     }
