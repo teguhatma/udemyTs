@@ -3,7 +3,8 @@ import { NumbersCollection } from './NumbersCollection';
 import { CharactersCollection } from './CharactersCollection';
 import { LinkeList } from './LinkedList';
 
-// const numbersCollection = new NumbersCollection([10, 3, -5, 0, -101]);
+const numbersCollection = new NumbersCollection([10, 3, -5, 0, -101]);
+numbersCollection.sort();
 // const sorter = new Sorter(charactersCollection);
 // sorter.sort();
 // console.log(numbersCollection.data);
