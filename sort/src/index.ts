@@ -1,13 +1,24 @@
 import { Sorter } from './Sorter';
 import { NumbersCollection } from './NumbersCollection';
 import { CharactersCollection } from './CharactersCollection';
+import { LinkeList } from './LinkedList';
 
 // const numbersCollection = new NumbersCollection([10, 3, -5, 0, -101]);
 // const sorter = new Sorter(charactersCollection);
 // sorter.sort();
 // console.log(numbersCollection.data);
 
-const charactersCollection = new CharactersCollection('teguh');
-const sorter = new Sorter(charactersCollection);
+// const charactersCollection = new CharactersCollection('teguh');
+// const sorter = new Sorter(charactersCollection);
+// sorter.sort();
+// console.log(charactersCollection.data);
+
+const linkedList = new LinkeList();
+linkedList.add(500);
+linkedList.add(-10);
+linkedList.add(-3);
+linkedList.add(4);
+
+const sorter = new Sorter(linkedList);
 sorter.sort();
-console.log(charactersCollection.data);
+linkedList.print();
