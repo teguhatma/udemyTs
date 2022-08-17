@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const CsvFileReader_1 = require("./CsvFileReader");
 const reader = new CsvFileReader_1.CsvFileReader('asset/football.csv');
 reader.read();
+console.log(reader.data);
 // enum - enumaration
 var MatchResult;
 (function (MatchResult) {
