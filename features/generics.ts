@@ -22,4 +22,4 @@ class ArrayOfAnything<T> {
   }
 }
 
-new ArrayOfAnything<string>(['a', 'b']);
+const arr = new ArrayOfAnything(['a', 'b']);
