@@ -1,8 +1,16 @@
 import { User } from './models/User';
 
 const user = new User({ name: 'Teguh Atma', age: 21 });
-user.attributes.get('id');
-user.attributes.get('name');
-user.attributes.get('age');
 
-user.sync.save();
+// A quick remindeer on accessors
+
+class Person {
+  constructor(public firstName: string, public lastName: string) {}
+
+  get fullName(): string {
+    return `${this.firstName} ${this.lastName}`;
+  }
+}
+
+const person = new Person('Teguh', 'Atma');
+console.log(person.fullName);
