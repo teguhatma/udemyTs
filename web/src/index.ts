@@ -8,3 +8,7 @@ user.save();
 // Post
 const newUser = new User({ name: 'Teguh Atma', age: 21 });
 newUser.save();
+newUser.events.on('change', () => {
+  console.log('change!');
+});
+newUser.events.trigger('change');
