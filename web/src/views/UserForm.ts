@@ -1,4 +1,4 @@
-export class UseForm {
+export class UserForm {
   constructor(public parent: Element) {}
 
   template(): string {
